@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "why-do-we-need-terraform"
 title: "Why do we need Terraform? A short history of the SysAdmin"
 subtitle: "Infrastructure as Code — infrastructure defined, provisioned and managed in files — is much more manageable and scalable than manually deploying infrastructure, but how did we get here?"
 date: 2018-03-13
