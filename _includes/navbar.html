@@ -12,16 +12,19 @@
           <a class="nav-link" href="{{"/" | relative_url }}">Blog</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="{{"/services" | relative_url }}">Services</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
         </li>
         {% if site.github_username %}
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/{{ site.github_username }}" | relative_url }}">GitHub</a>
+          <a class="nav-link" href="https://github.com/{{ site.github_username }}" | relative_url }}"><i class="fab fa-github fa-inverse"></i> GitHub</a>
         </li>
         {% endif %}
         {% if site.linkedin_username %}
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" | relative_url }}">LinkedIn</a>
+          <a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" | relative_url }}"><i class="fab fa-linkedin fa-inverse"></i> LinkedIn</a>
         </li>
         {% endif %}
       </ul>
