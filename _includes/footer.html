@@ -58,8 +58,11 @@
           </li>
           {% endif %}
         </ul>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}{% if page.attribution %}, except header image "<a href="{{ page.attribution.image_url }}">{{ page.attribution.image_name }}</a>" by <a href="{{ page.attribution.author_url }}">{{ page.attribution.author }}</a> (licensed under <a href="{{ page.attribution.licence_url }}">{{ page.attribution.licence }}</a>){% endif %}</p>
-        <a href="privacy">Privacy policy</a>
+        <p class="copyright text-muted">
+          Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}
+          {% if page.attribution %}Except header image "<a href="{{ page.attribution.image_url }}">{{ page.attribution.image_name }}</a>" by <a href="{{ page.attribution.author_url }}">{{ page.attribution.author }}</a> (licensed under <a href="{{ page.attribution.licence_url }}">{{ page.attribution.licence }}</a>){% endif %}
+          <a href="privacy">Privacy policy</a>
+        </p>
       </div>
     </div>
   </div>
