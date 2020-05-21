@@ -21,10 +21,8 @@ No matter what you call it, if you need to get to grips with the technology that
 
 ## IJAWS (It's Just A WebSite!)
 
-For those that just need a web presence, but don't want to maintain one: standard template, re-usable content, easy blogging.
+For those that just need a web presence, but don't want to maintain one: standard template, re-usable content, easy blogging. Also allows for multiple websites to be maintained through a single interface, with the ability to send a blog post to some or all of them.
 
-Got a big organisation with lots of websites? I can deploy a version of this that allows you to upload content once, and display it on many websites. Get everyone to contribute and share the load!
+## mmDat
 
-## MMET (Multi-directional Membership Engagement Tool)
-
-Do you need to track members? Get them to pay subscriptions? Send them newsletters? Get them to talk to each other? MMET is the service for you! Built out of Open Source components and provided as a service, you can both enjoy a zero-maintenance Website, CRM and Community Forums, and know you're not locked in to a single provider.
+A simple membership database service that allows membership organisations to keep a record of their members, take donation and subscription payments, and allow members to update their membership information. Provides a flexible database backend that allows for custom information to be collected and recorded.
