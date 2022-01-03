@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/jamesbelchambr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://james.belchamber.com
+  * I am jamesbelchambr (https://keybase.io/jamesbelchambr) on keybase.
+  * I have a public key with fingerprint DDFA 80BF 7F67 A12B AA6A  FE8F 3B40 DF61 39FC 6F3B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010116e99e31ea05291a85a359cad771c4a955ad5e40c6e52332ea70828525c8e1a20a",
+      "fingerprint": "ddfa80bf7f67a12baa6afe8f3b40df6139fc6f3b",
+      "host": "keybase.io",
+      "key_id": "3b40df6139fc6f3b",
+      "kid": "010116e99e31ea05291a85a359cad771c4a955ad5e40c6e52332ea70828525c8e1a20a",
+      "uid": "74e4b3089669d1e7bd4f7886cec10e19",
+      "username": "jamesbelchambr"
+    },
+    "service": {
+      "hostname": "james.belchamber.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1641251768,
+  "expire_in": 157680000,
+  "prev": "007e6a761dc5afa1462f85d9d5624f489eee357fae3d261d53e4ec30842094c5",
+  "seqno": 22,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owJ4nK2SfUxVdRjHLy+6uEDgRDcBiU5KQ6903l/uRIgLhlRrMEbahNvvnPM7l8OF
+e27nnAviDSsat8KXkdAC52zR0hGKNbyI5XJIqckVB0kYDgSnQ1aKTbxpo+xcFlt/
+9Ge/f549z+/zfPd9nj1NsREmc9jgtYHE5JUv62EDM7wJ/PjuaS/CK2ItYvUiTrgQ
+YKUINd3ulEXEiqAYimE05DhIYBCgFM5hgKUAQXECEBkGE0jAURQQKUiiAg0pnCBw
+CBiUxVkKpwQWYgBHAWJBJNnlgKpblV26ISuKEmBRXmIkmgEYzgNAAwmyEsGTqCjR
+GMFJAm1kRmO5ooU6DHM80GCGrBg1I7Ev2PsP/n/27VmQY0hI8gTKcjTNiRhkeJGU
+GJalBShgKMS4EKhB1QWqoEFXGEHjYaVQDqp4FamzIMZftSzA0HpD8/yby1gEoZoh
+KFWGkltVdEVQKg2iXNfdmjWkoNe6Qy01kLf/I2bnZZdobNXoqIaqJisuxIoZpKDL
+IXWMJjGcwhiatSBwh1tWoV0OEZRRQY1nQRxuFVaHdoUykAYMjYkCBSSAkTQusZTI
+iRSNkxLJchBCgmIkAAkRNyiKgCQUjG2QOMqRAoWE5nvDpSBWHDeMAoehqckOF9A9
+KkTqzB+EE5GmMLNp9cqnI0ezc49ffzysMBMFxOIpLgkP3aHJHBW/WNm6PN60n47I
+X+Edq+bmW34GCW7+sP7sZDNWc/hWJvaoErPeK+meaui8aufNv9pOzSCt374E48is
+6OSzUvkrj/86sHNd0JZ3NOj0DXr/nD3dblOmA5u+LO6rb8RrdkxK70Wvv2OLri9z
+Zn28vjfxwolrUrAx3Fcxt+8AG5Of+lFZoaers/96tj6elmzTOnpc26JfnGtsjgm7
+2qrhcS0929JaPLcL3v5hdr8l8S5ftTXh+PuBi+jUmu+Vi59Oxp659ERme1fjU2Mn
+/VLOb2VoUuws+fxo6WhacdPeTKupdS0RJ/s7229FTfdtrlja5+nJMj/pjytmOgLj
+OeFLUvWEgjntWPKub0qLij778K3gyP1VSvozN67AijsD9/xFy/v741y3M3obyo5F
+ZaXEHCIC78SfLW/IDp6hS+lHKaVd2xsuv1o7kbbq4JYXXvs9amo2q9N3Pq/4Zp4T
+JqdU+LZszm37YnxOS5s90nbjyCnH15+PVFu8uy7tJndP1GUPHhxybUwtSfdTm777
+5KvzG+p6H87og2BPwdBEm7qae9OjzF/J37lu+LmHuSvu74t8Xd4w+FN3Rs/IOdlX
+JCR1JETufRBkh2NbfG0XDv3SwU8zk+c22tCIP6Tmyu74Zd4T9cvcjWvXLB3zl5x8
+kEMNWyemE+YLU5imIbvz8rTzbuBoJJ80j6TfdAQKt/8NRk3K6w==
+=VFYi
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jamesbelchambr
+
+==================================================================
