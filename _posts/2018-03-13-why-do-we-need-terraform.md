@@ -47,5 +47,3 @@ Cloud services provide an API and many SysAdmins (or **Dev**elopers, who were by
 Terraform is a pure Infrastructure as Code tool. It’s written to create infrastructure and has an opinionated design that (usually) forces you to write code that builds efficient, sensible infrastructure. It allows you to describe like servers once, then use that code to describe a whole environment. You can then write code to deploy many copies of that environment (Test, Staging, Prod, Mike’s experiment, Prod-France, etc). IaC allows you to automate creating the infrastructure, ready for Configuration Management to configure it.
 
 As you can see, Terraform is the next step in a long and storied history of automating away the work of a SysAdmin.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PtXtIivRRKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

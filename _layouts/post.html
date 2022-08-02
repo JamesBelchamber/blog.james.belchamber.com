@@ -32,6 +32,10 @@ layout: default
 
         {{ content }}
 
+        {% if canonical_url %}
+        <p>This article was originally posted on the <a href="{{ canonical_url }}">{{ canonical_name }}</a></p>
+        <link rel="canonical" href="{{ canonical_url }}" />
+        {% endif %}    
       </div>
     </div>
   </div>
