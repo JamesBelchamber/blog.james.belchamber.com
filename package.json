@@ -1,0 +1,13 @@
+{
+  "name": "james.belchamber.com",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.0"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  }
+}
