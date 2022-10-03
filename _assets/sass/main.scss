@@ -1,1 +1,40 @@
+@import './base/bootstrap_overrides';
 @import './vendor/bootstrap';
+
+.cover-container {
+    max-width: 56em;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255);
+    font-weight: 700;
+}
+
+.nav-masthead .nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    color: var(--bs-body-color);
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: var(--bs-body-color);
+    border-bottom-color: #fff;
+}
+
+a {
+    color:inherit;
+    font-weight: 700;
+}
