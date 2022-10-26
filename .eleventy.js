@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addPassthroughCopy("images");
 	eleventyConfig.addPassthroughCopy("articles/**/*.jpg");
+	eleventyConfig.addPassthroughCopy("*.html");
+	eleventyConfig.addPassthroughCopy("*.txt");
+	eleventyConfig.addPassthroughCopy("CNAME");
 
 	const markdownItOptions = {
 		html: true,
