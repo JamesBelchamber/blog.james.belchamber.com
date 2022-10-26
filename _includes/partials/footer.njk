@@ -1,4 +1,16 @@
-<footer class="mt-auto text-white-50">
-    <p>Copyright © James Belchamber 2022, except background image "<a href="https://www.flickr.com/photos/dazryan/39172431621">Shapes and Movement</a>" by <a href="https://www.flickr.com/photos/dazryan">Darren Ryan</a> (licensed under
-        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>). Built with <a href="https://www.11ty.dev/">11ty</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
-</footer>
+    <footer class="text-white-50">
+        <span>{% for item in site.navigation %}
+            {% if item.label %}
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}">{{ item.label }}</a>
+            {% elif item.svg %}
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}"><svg class="icon" style="fill: white;" focusable="false" aria-labelledby="{{ item.svg }}_footer_title"><title id="{{ item.svg }}_footer_title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
+            {% endif %}
+            {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
+        {% endfor %}</span>
+        <br/>
+        <br/>
+        <nav class="nav d-flex justify-content-center">
+            All content Copyright © {{ site.title }} {% year %}, except where stated.
+        </nav>
+
+    </footer>

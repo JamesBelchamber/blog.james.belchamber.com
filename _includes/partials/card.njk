@@ -1,22 +1,15 @@
-{% macro card(post, author_page="False") %}
+{% macro card(article) %}
     <div class="blog-post">
         <figure>
-            <img class="img-fluid rounded-lg" src="{{ post.feature_image }}" alt=""></img>
+            <img class="img-fluid rounded-lg" src="{{ article.url }}{{ article.data.background }}" alt=""/>
         </figure>
         <div class="media">
-        {{ author.page }}
-            {% if author_page == "False" %}
-            <a href="{{ post.primary_author.url }}">
-                <img class="author-profile-image rounded-circle d-none d-sm-block mr-sm-2" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
-            </a>
-            {% endif %}
             <div class="media-body blog-post-title">
-                <a href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
-                <h6 class="blog-post-meta">{% if author_page == "False" %}By <a href="{{ post.primary_author.url }}">{{ post.primary_author.name }}</a> | {% endif %}{{ post.published_at.toDateString() }}</h6>
+                <a href="{{ article.url }}"><h2 class="blog-post-title">{{ article.data.title }}</h2></a>
+                <p class="blog-post-meta text-muted">{{ article.date.toDateString() }}</p>
             </div>
         </div>
-        {% set html = post.html.split('<hr>') %}
-        {{ html[0] | safe }}
-        <a type="button" class="btn btn-primary float-right" href="{{ post.url }}">Read More</a>
+        <p>{{ article.data.subtitle | safe }}</p>
+        <a type="button" class="btn btn-primary float-end" href="{{ article.url }}">Read More</a>
     </div>
 {% endmacro %}

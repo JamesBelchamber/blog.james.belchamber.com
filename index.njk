@@ -1,26 +1,16 @@
 ---
 ---
 
-{% extends 'layouts/default.njk' %}
+{% extends 'layouts/cover.njk' %}
 {% block content %}
-    <body class="d-flex h-100 text-center text-bg-dark background-image">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            {% include "partials/header.njk" %}
             <main class="px-3">
                 <h1>James Belchamber</h1>
                 <p class="lead"><strong>I like building things</strong></p>
-                <p class="lead"><strong>(Currently building things at <a href="https://www.generation.org/">Generation: You Employed</a>)</strong></p>
+                <p class="lead"><strong>(Currently building things at <a style="color: white;" href="https://www.generation.org/">Generation: You Employed</a>)</strong></p>
                 <p class="lead">
-                    {% set navPages = collections.all | eleventyNavigation %}
-                    {%- for entry in navPages %}
-                    <a href="{{ entry.url }}" class="btn btn-secondary">{{ entry.title }}</a>
+                    {%- for entry in site.navigation %}
+                    <a href="{{ entry.url }}" class="btn btn-secondary my-1">{{ entry.label }}</a>
                     {%- endfor %}
                 </p>
             </main>
-<footer class="mt-auto text-white-50">
-    <p>Copyright © James Belchamber 2022, except background image "<a href="https://www.flickr.com/photos/dazryan/39172431621">Shapes and Movement</a>" by <a href="https://www.flickr.com/photos/dazryan">Darren Ryan</a> (licensed under
-        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>). Built with <a href="https://www.11ty.dev/">11ty</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
-</footer>
-        </div>
-    </body>
 {% endblock content %}

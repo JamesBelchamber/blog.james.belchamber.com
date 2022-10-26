@@ -1,11 +1,28 @@
-<header class="mb-auto">
-    <div>
-        <h3 class="float-md-start mb-0">{{ site.title }}</h3>
-        {% set navPages = collections.all | eleventyNavigation %}
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-            {%- for entry in navPages %}
-                <a class="nav-link fw-bold py-1 px-0{% if entry.url == page.url %} active" aria-current="page{% endif %}" href="{{ entry.url }}">{{ entry.title }}</a>
-            {%- endfor %}
-            </nav>
-        </div>
+{% include "partials/icons.njk" %}
+
+    <header class="container text-white-50">
+        <nav class="navbar navbar-dark navbar-expand-xl">
+            <div class="navbar-brand order-xl-last">
+                <a class="navbar-brand order-xl-last" href="{{ site.url }}/">
+                    {% if site.logo %}
+                    <img class="site-logo" src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }}">
+                    {% else %}
+                    {{ site.title }}
+                    {% endif %}
+                </a>
+            </div>
+            <div class="navbar-header mr-auto collapse navbar-collapse"  id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    {% for item in site.navigation %}
+                    <li class="nav-item">
+                        {% if item.label %}
+                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank"{% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}">{{ item.label }}</a>
+                        {% elif item.svg %}
+                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}"><svg class="icon" focusable="false" aria-labelledby="{{ item.svg }}_header_title"><title id="{{ item.svg }}_header_title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
     </header>

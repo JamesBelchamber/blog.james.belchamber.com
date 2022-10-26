@@ -1,0 +1,57 @@
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+    <article class="blog-post px-3">
+            <figure>
+                <img class="img-fluid rounded" src="{{ background }}" alt=""/>
+            </figure>
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="media">
+                    <div class="media-body pl-sm-2 blog-post-title">
+                        <h1 class="blog-post-title">{{ title }}</h1>
+                        <p class="blog-post-meta text-muted">{{ date.toDateString() }}</p>
+                    </div>
+                </div>
+                {{ content | safe }}
+                <br/>
+            </div>
+            {% include "partials/sidebar.njk" %}
+        </div>
+    </article>
+{% endblock %}
+
+{%- block seo -%}
+    <!--Twitter Card-->
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:creator" content="{{ post.primary_author.twitter if post.primary_author.twitter else site.twitter }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url + page.url }}">
+    <meta name="twitter:title" content="{{ title }} - {{ site.title }}">
+    <meta name="twitter:description" content="{{ html[0] | safe }}">
+    <meta name="twitter:image" content="{{ post.feature_image }}">
+
+    <!--Schema-->
+    <link rel="author" href="{{ post.primary_author.website if post.primary_author.website else site.url }}">
+    <link rel="publisher" href="{{ site.url }}">
+    <meta itemprop="name" content="{{ title }} - {{ site.title }}">
+    <meta itemprop="description" content="{{ html[0] | safe }}">
+    <meta itemprop="image" content="{{ post.feature_image }}">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="{{ site.url + page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }} - {{ site.title }}">
+    <meta property="og:image" content="{{ post.feature_image }}">
+    <meta property="og:description" content="{{ html[0] | safe }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="{{ site.lang }}">
+    <meta property="article:author" content="{{ site.url }}">
+
+    <!-- Canonical URL -->
+    {% if post.canonical == "ALDES" %}
+    <link rel="canonical" href="{{ "https://www.aldes.org.uk" + page.url }}" />
+    {% else %}
+    <link rel="canonical" href="{{ site.url + page.url }}" />
+    {% endif %}
+{%- endblock -%}

@@ -1,4 +1,39 @@
 {
     "title": "James Belchamber",
-    "description": "The personal website of James Belchamber, an experienced tech generalist currently working in the charity and educational sectors."
+    "description": "The personal website of James Belchamber, an experienced tech generalist currently working in the charity and educational sectors.",
+    "lang": "en-GB",
+    "navigation": [
+        {
+            "url": "/",
+            "label": "Home",
+            "newtab": false
+        },
+        {
+            "url": "/articles/",
+            "label": "Articles",
+            "newtab": false
+        },
+        {
+            "url": "https://github.com/JamesBelchamber",
+            "label": "GitHub",
+            "newtab": true
+        },
+        {
+            "url": "https://www.linkedin.com/in/jamesbelchamber/",
+            "label": "LinkedIn",
+            "newtab": true
+        },
+        {
+            "url": "mailto:james@belchamber.com",
+            "label": "Email",
+            "newtab": true
+        }
+    ],
+    "sidebar": [
+      {
+        "blurb": [
+          "The personal website of James Belchamber, an experienced tech generalist currently working in the charity and educational sectors."
+        ]
+      }
+    ]
 }
