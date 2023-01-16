@@ -19,6 +19,11 @@
             "newtab": true
         },
         {
+            "url": "https://mastodon.isaffine.name/@jamesbelchamber",
+            "label": "Mastodon",
+            "newtab": true
+        },
+        {
             "url": "https://www.linkedin.com/in/jamesbelchamber/",
             "label": "LinkedIn",
             "newtab": true
